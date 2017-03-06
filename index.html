@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+   
+</head>
+<body  style="overflow-x:hidden">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+            <h1 class="panel-title" style="font-size:30px">Frogger Game</h1>
+            </div>
+        <div class="panel-body" style="font-size:20px">
+            Enjoy this game! Good Luck :)   
+            <button type="button" class="btn btn-info" style="margin-left:20px" id="howtoplay">How To Play</button>
+        </div>
+        </div>
+    <div class="panel panel-default" id="introduction" style="display:none">
+        <div class="panel-heading" >
+            
+            <h3 class="panel-title" style="font-size:20px">How To Play
+            <button type="button" class="btn btn-default col-md-offset-8" id="cross">    
+            <span class="glyphicon glyphicon-remove " ></span>
+            </button>
+            </h3>
+        </div>
+        <div class="panel-body" style="font-size:15px">
+            <ul style="text-align:left;">
+                <li>Get to the water!</li>
+                <li>Use the arrow keys to control your hero.</li>
+                <li>Be careful with your enemies!</li>
+                <li>Faster you are, more scores you earn.</li>
+                <li>Your hero has 3 lives.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="row" id="title">
+        <div class="col-md-1 col-md-offset-4">
+                <img src="images/Heart.png" id="lifeIcon">
+        </div>
+        <div class="col-md-1">
+                <h2 id="life" >3</h2>
+        </div>
+        <div class="col-md-1">
+                <img src="images/Star.png" id="scoreIcon">
+        </div>
+        <div class="col-md-1">
+                <h2 id="score" >0</h2>
+        </div>
+        
+    </div>    
+    
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    
+   
+</body>
+</html>
